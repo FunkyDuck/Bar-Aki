@@ -1,1 +1,6 @@
-<p>menu-drinks works!</p>
+<h1>Carte des Boissons</h1>
+<section>
+    <ul>
+        <li *ngFor="let item of drinks"><b>{{item.nom}}</b><i>{{item.prix}} €</i></li>
+    </ul>
+</section>

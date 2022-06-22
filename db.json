@@ -14,12 +14,57 @@
     }
   ],
   "drinks": [
-    {"id": 1,"nom":"Jupiler","prix":1},
-    {"id":2,"nom":"Chimay Bleue","prix":2.5},
-    {"id":3,"nom":"Leffe Blonde","prix":2}
+    {
+      "id": 1,
+      "nom": "Jupiler",
+      "prix": 1
+    },
+    {
+      "id": 2,
+      "nom": "Chimay Bleue",
+      "prix": 2.5
+    },
+    {
+      "id": 3,
+      "nom": "Leffe Blonde",
+      "prix": 2
+    },
+    {
+      "id": 4,
+      "nom": "Leffe Brune",
+      "prix": 2
+    },
+    {
+      "id": 5,
+      "nom": "Kwak",
+      "prix": 3.5
+    }
   ],
   "foods": [
-    {"id":1,"nom":"frites","prix": 3},
-    {"id":2,"nom":"bicky","prix": 2.5}
+    {
+      "id": 1,
+      "nom": "Frites",
+      "prix": 3
+    },
+    {
+      "id": 2,
+      "nom": "Bicky",
+      "prix": 2.5
+    },
+    {
+      "id": 3,
+      "nom": "Fricadelle",
+      "prix": 1.5
+    },
+    {
+      "id": 4,
+      "nom": "Cervelas",
+      "prix": 2
+    },
+    {
+      "id": 5,
+      "nom": "Poulycrok",
+      "prix": 1.5
+    }
   ]
 }

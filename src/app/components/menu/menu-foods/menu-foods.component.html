@@ -1,1 +1,6 @@
-<p>menu-foods works!</p>
+<h1>Carte des Snacks</h1>
+<section>
+    <ul>
+        <li *ngFor="let item of foods"><b>{{item.nom}}</b><i>{{item.prix}} €</i></li>
+    </ul>
+</section>

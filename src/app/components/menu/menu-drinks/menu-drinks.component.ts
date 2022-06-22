@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Drink } from 'src/app/models/drink.model';
+import { DrinkService } from 'src/app/services/drink.service';
 
 @Component({
   selector: 'app-menu-drinks',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuDrinksComponent implements OnInit {
 
-  constructor() { }
+  drinks: Drink[] = [];
+
+  constructor(private _dService: DrinkService, private _router: Router) { }
 
   ngOnInit(): void {
+    this._dService.getDrinks().subscribe(data => {
+      this.drinks = data as Drink[];
+    })
   }
 
 }
