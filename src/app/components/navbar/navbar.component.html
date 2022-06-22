@@ -1,0 +1,29 @@
+<nav>
+    <section>
+        <a routerLink="/">
+            <img src="/assets/img/baraki-logo.png" alt="">
+        </a>
+        
+        <img src="/assets/img/beer.png" alt="" id="imgMenu" (click)="displayNav()">
+    </section>
+    
+    <section id="subMenu">
+        <ul>
+            <li>
+                <a routerLink="home">Accueil</a>
+            </li>
+
+            <li>
+                <a routerLink="menu/drink">Drinks</a>
+            </li>
+
+            <li>
+                <a routerLink="menu/food">Foods</a>
+            </li>
+
+            <li>
+                <a routerLink="contact">Contact</a>
+            </li>
+        </ul>
+    </section>
+</nav>

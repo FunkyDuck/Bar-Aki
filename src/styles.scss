@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+
+$background: #efb14a;
+$red: #ff0924;
+$orange: #fe9015;
+$yellow: #ffed4f;
+$green: #008848;
+$blue: #082eb3;
+
+body {
+}
+
+nav {
+    background: $background;
+    border-radius: 0 0 16px 16px;
+    border-bottom: 0.1vh solid $yellow;
+}
+
+nav section:first-child {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav section:last-child {
+    margin: 0vh 5vw;
+    display: none;
+}
+
+nav section.display:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+nav img {
+    height: 8vh;
+    margin: 1vh 2vw;
+}
+
+nav img.display {
+    transform: rotate(-45deg);
+    margin: 1vh 3vw;
+}
+
+nav section ul {
+    justify-content: flex-end;
+    text-align: end;
+}
+
+nav section ul li:last-child {
+    padding-bottom: 1vh;
+}
+
+nav section ul li a {
+    color: $yellow;
+    text-decoration: none;
+    font-size: 1.25 rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5vh 5vw;
+}
+
+form label {
+    color: $orange;
+    font-weight: bold;
+}
+
+form input {
+    color: $orange;
+    border: $orange solid 1px;
+    border-radius: 4px;
+    background: $yellow;
+    margin: 0.5vh 0;
+    padding: 0.25vh 2vw;
+}
+
+form select {
+    background-color: $yellow;
+    color: $orange;
+    border: $orange 1px solid;
+    border-radius: 8px;
+    padding: 0.25vh 2vw;
+}

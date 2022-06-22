@@ -1,0 +1,15 @@
+<main>
+    <form [formGroup]="form">
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo" formControlName="pseudo" placeholder="Pseudo">
+        </div>
+
+        <div>
+            <label for="destination">Destination</label>
+            <select name="destination" id="destination">
+                <option *ngFor="let elem of services" value="{{elem}}">{{elem}}</option>
+            </select>
+        </div>
+    </form>
+</main>
