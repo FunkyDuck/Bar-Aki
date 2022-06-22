@@ -7,11 +7,11 @@ import { Message } from '../models/message.model';
 })
 export class MessageService {
 
-  private readonly BASE_URL = "http://localhost:3000/message";
+  private readonly BASE_URL = "http://localhost:3000/messages";
 
   constructor(private _client: HttpClient) { }
 
   public sendMessage(message: Message) {
-    this._client.post(this.BASE_URL, message)
+    return this._client.post(this.BASE_URL, message)
   }
 }

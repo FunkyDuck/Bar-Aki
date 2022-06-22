@@ -1,15 +1,28 @@
 <main>
     <form [formGroup]="form">
         <div>
+            <h1>Laisse un message !</h1>
+        </div>
+        <div>
             <label for="pseudo">Pseudo</label>
             <input type="text" name="pseudo" id="pseudo" formControlName="pseudo" placeholder="Pseudo">
         </div>
 
         <div>
             <label for="destination">Destination</label>
-            <select name="destination" id="destination">
+            <select name="destination" id="destination" formControlName="destination">
                 <option *ngFor="let elem of services" value="{{elem}}">{{elem}}</option>
             </select>
         </div>
+
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" formControlName="message">Votre message ici...</textarea>
+        </div>
+
+        <div>
+            <button type="submit" (click)="sendMessage()">Envoyer le sous-bock !</button>
+        </div>
+        
     </form>
 </main>
